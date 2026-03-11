@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ytohnuki - Profile</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.6; }
+    .hero { background: linear-gradient(135deg, #161b22, #1a1e2e); padding: 80px 20px; text-align: center; border-bottom: 1px solid #30363d; }
+    .hero h1 { font-size: 2.5rem; color: #58a6ff; margin-bottom: 8px; }
+    .hero p { font-size: 1.2rem; color: #8b949e; }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+    section { margin-bottom: 40px; }
+    h2 { font-size: 1.5rem; color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 8px; margin-bottom: 16px; }
+    .card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin-bottom: 12px; }
+    .card h3 { color: #e6edf3; margin-bottom: 4px; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .links a { display: inline-block; margin-right: 16px; }
+    ul { list-style: none; padding: 0; }
+    ul li { margin-bottom: 8px; }
+    ul li::before { content: "•"; color: #58a6ff; margin-right: 8px; }
+    .status { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; margin-left: 8px; }
+    .merged { background: #238636; color: #fff; }
+    .review { background: #9e6a03; color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Yuto Ohnuki</h1>
+    <p>Linux Kernel Contributions</p>
+  </div>
+  <div class="container">
+
+    <section>
+      <h2>Merged <span class="status merged">merged</span></h2>
+      <div class="card">
+        <ul>
+          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net-next.git/commit/?id=dfe80201e1b04f683698a065f059b66102b12e89">dfe80201e1b0 - igbvf: remove unused fields from struct igbvf_adapter</a></li>
+          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net-next.git/commit/?id=0d1c95e42b77cb79461bf7edff24c63d0b2d46fe">0d1c95e42b77 - ixgbevf: remove unused fields from struct ixgbevf_adapter</a></li>
+          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/vfs/vfs.git/commit/?h=vfs.all&id=7c0225003317bd6e2107784a83c7099de8b2b28c">7c0225003317 - fs: improve dump_inode() to safely access inode fields</a></li>
+          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/mszeredi/fuse.git/commit/?id=57c2258dd2d0">57c2258dd2d0 - virtiofs: add FUSE protocol validation</a></li>
+          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/mszeredi/fuse.git/commit/?h=for-next&id=9587fde0da0365d300ea1c967e63ad3fe09b883e">9587fde0da03 - fuse: refactor duplicate queue teardown operation</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Under Review <span class="status review">in review</span></h2>
+      <div class="card">
+        <ul>
+          <li><a href="https://lore.kernel.org/all/20260310183835.89827-6-ytohnuki@amazon.com/">xfs: fix AIL push use-after-free during shutdown</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
