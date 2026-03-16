@@ -10,6 +10,9 @@
     .hero { background: linear-gradient(135deg, #161b22, #1a1e2e); padding: 80px 20px; text-align: center; border-bottom: 1px solid #30363d; }
     .hero h1 { font-size: 2.5rem; color: #58a6ff; margin-bottom: 8px; }
     .hero p { font-size: 1.2rem; color: #8b949e; }
+    .pub-meta { font-size: 0.9rem; color: #8b949e; margin-top: 4px; }
+    .pub-links { margin-top: 8px; }
+    .pub-links a { margin-right: 12px; }
     .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
     section { margin-bottom: 40px; }
     h2 { font-size: 1.5rem; color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 8px; margin-bottom: 16px; }
@@ -29,12 +32,32 @@
 <body>
   <div class="hero">
     <h1>Yuto Ohnuki</h1>
-    <p>Linux Kernel Contributions</p>
+    <p>Cloud Support Engineer</p>
   </div>
   <div class="container">
 
     <section>
-      <h2>Merged <span class="status merged">merged</span></h2>
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Cloud Support Engineer II - Linux</h3>
+        <p class="pub-meta">Jul 2025 - Present · Dublin, Ireland</p>
+      </div>
+      <div class="card">
+        <h3>Cloud Support Engineer - Linux</h3>
+        <p class="pub-meta">Dec 2023 - Jul 2025 · Dublin, Ireland</p>
+      </div>
+      <div class="card">
+        <h3>Cloud Support Associate - Linux</h3>
+        <p class="pub-meta">Apr 2023 - Nov 2023 · Dublin, Ireland</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Linux Kernel Contributions</h2>
+    </section>
+
+    <section>
+      <h3>Merged <span class="status merged">merged</span></h3>
       <div class="card">
         <ul>
           <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net-next.git/commit/?id=dfe80201e1b04f683698a065f059b66102b12e89">dfe80201e1b0 - igbvf: remove unused fields from struct igbvf_adapter</a></li>
@@ -47,7 +70,7 @@
     </section>
 
     <section>
-      <h2>Under Review <span class="status review">in review</span></h2>
+      <h3>Under Review <span class="status review">in review</span></h3>
       <div class="card">
         <ul>
           <li><a href="https://lore.kernel.org/all/20260310183835.89827-6-ytohnuki@amazon.com/">xfs: fix AIL push use-after-free during shutdown</a></li>
@@ -56,6 +79,21 @@
           <li><a href="https://lore.kernel.org/all/20260314184421.47303-2-ytohnuki@amazon.com/">fs: fix use-after-free in peer group traversal during mount release</a></li>
           <li><a href="https://lore.kernel.org/all/20260316070358.65225-2-ytohnuki@amazon.com/">blk-wbt: remove WARN_ON_ONCE from wbt_init_enable_default()</a></li>
         </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+      <div class="card">
+        <h3><a href="https://link.springer.com/article/10.1186/s13321-024-00897-y">Deep learning of multimodal networks with topological regularization for drug repositioning</a></h3>
+        <p class="pub-meta">Journal of Cheminformatics · Aug 23, 2024</p>
+        <div class="pub-links">
+          <a href="https://github.com/yuto-ohnuki/STRGNN">STRGNN: Sequentially Topological Regularization Graph Neural Network</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3><a href="https://link.springer.com/article/10.1186/s13321-021-00513-3">Deep learning integration of molecular and interactome data for protein-compound interaction prediction</a></h3>
+        <p class="pub-meta">Journal of Cheminformatics · Mar 1, 2021</p>
       </div>
     </section>
 
