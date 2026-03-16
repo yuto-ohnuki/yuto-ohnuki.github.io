@@ -27,6 +27,8 @@
     .status { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; margin-left: 8px; }
     .merged { background: #238636; color: #fff; }
     .review { background: #9e6a03; color: #fff; }
+    ul ul { margin-left: 24px; margin-top: 4px; }
+    ul ul li::before { content: "◦"; }
   </style>
 </head>
 <body>
@@ -73,7 +75,14 @@
       <h3>Under Review <span class="status review">in review</span></h3>
       <div class="card">
         <ul>
-          <li><a href="https://lore.kernel.org/all/20260310183835.89827-6-ytohnuki@amazon.com/">xfs: fix AIL push use-after-free during shutdown</a></li>
+          <li><a href="https://lore.kernel.org/all/20260310183835.89827-6-ytohnuki@amazon.com/">xfs: fix AIL push use-after-free during shutdown</a>
+            <ul>
+              <li><a href="https://lore.kernel.org/all/20260310183835.89827-7-ytohnuki@amazon.com/">1/4 - xfs: stop reclaim before pushing AIL during unmount</a></li>
+              <li><a href="https://lore.kernel.org/all/20260310183835.89827-8-ytohnuki@amazon.com/">2/4 - xfs: avoid dereferencing log items after push callbacks</a></li>
+              <li><a href="https://lore.kernel.org/all/20260310183835.89827-9-ytohnuki@amazon.com/">3/4 - xfs: save ailp before dropping the AIL lock in push callbacks</a></li>
+              <li><a href="https://lore.kernel.org/all/20260310183835.89827-10-ytohnuki@amazon.com/">4/4 - xfs: refactor xfsaild_push loop into helper</a></li>
+            </ul>
+          </li>
           <li><a href="https://lore.kernel.org/all/20260223123345.14838-2-ytohnuki@amazon.com/">ext4: replace BUG_ON with proper error handling in ext4_read_inline_folio</a></li>
           <li><a href="https://lore.kernel.org/all/20260226201857.27310-2-ytohnuki@amazon.com/">fs: remove stale and duplicate forward declarations</a></li>
           <li><a href="https://lore.kernel.org/all/20260314184421.47303-2-ytohnuki@amazon.com/">fs: fix use-after-free in peer group traversal during mount release</a></li>
