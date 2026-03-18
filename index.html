@@ -62,11 +62,15 @@
       <h3>Merged <span class="status merged">merged</span></h3>
       <div class="card">
         <ul>
-          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net-next.git/commit/?id=dfe80201e1b04f683698a065f059b66102b12e89">dfe80201e1b0 - igbvf: remove unused fields from struct igbvf_adapter</a></li>
-          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net-next.git/commit/?id=0d1c95e42b77cb79461bf7edff24c63d0b2d46fe">0d1c95e42b77 - ixgbevf: remove unused fields from struct ixgbevf_adapter</a></li>
-          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/vfs/vfs.git/commit/?h=vfs.all&id=7c0225003317bd6e2107784a83c7099de8b2b28c">7c0225003317 - fs: improve dump_inode() to safely access inode fields</a></li>
-          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/mszeredi/fuse.git/commit/?id=57c2258dd2d0">57c2258dd2d0 - virtiofs: add FUSE protocol validation</a></li>
-          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/mszeredi/fuse.git/commit/?h=for-next&id=9587fde0da0365d300ea1c967e63ad3fe09b883e">9587fde0da03 - fuse: refactor duplicate queue teardown operation</a></li>
+          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net-next.git/commit/?id=dfe80201e1b04f683698a065f059b66102b12e89">igbvf: remove unused fields from struct igbvf_adapter</a></li>
+          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net-next.git/commit/?id=0d1c95e42b77cb79461bf7edff24c63d0b2d46fe">ixgbevf: remove unused fields from struct ixgbevf_adapter</a></li>
+          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/vfs/vfs.git/commit/?h=vfs.all&id=7c0225003317bd6e2107784a83c7099de8b2b28c">fs: improve dump_inode() to safely access inode fields</a></li>
+          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/mszeredi/fuse.git/commit/?id=57c2258dd2d0">virtiofs: add FUSE protocol validation</a></li>
+          <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/mszeredi/fuse.git/commit/?h=for-next&id=9587fde0da0365d300ea1c967e63ad3fe09b883e">fuse: refactor duplicate queue teardown operation</a></li>
+          <li><a href="https://git.kernel.org/pub/scm/fs/xfs/xfs-linux.git/commit/?h=for-next&id=4f24a767e3d64a5f58c595b5c29b6063a201f1e3">xfs: stop reclaim before pushing AIL during unmount</a></li>
+          <li><a href="https://git.kernel.org/pub/scm/fs/xfs/xfs-linux.git/commit/?h=for-next&id=79ef34ec0554ec04bdbafafbc9836423734e1bd6">xfs: avoid dereferencing log items after push callbacks</a></li>
+          <li><a href="https://git.kernel.org/pub/scm/fs/xfs/xfs-linux.git/commit/?h=for-next&id=394d70b86fae9fe865e7e6d9540b7696f73aa9b6">xfs: save ailp before dropping the AIL lock in push callbacks</a></li>
+          <li><a href="https://git.kernel.org/pub/scm/fs/xfs/xfs-linux.git/commit/?h=for-next&id=7cac60947335f8d88a6390814840590a61134484">xfs: refactor xfsaild_push loop into helper</a></li>
         </ul>
       </div>
     </section>
@@ -75,17 +79,8 @@
       <h3>Under Review <span class="status review">in review</span></h3>
       <div class="card">
         <ul>
-          <li><a href="https://lore.kernel.org/all/20260310183835.89827-6-ytohnuki@amazon.com/">xfs: fix AIL push use-after-free during shutdown</a>
-            <ul>
-              <li><a href="https://lore.kernel.org/all/20260310183835.89827-7-ytohnuki@amazon.com/">1/4 - xfs: stop reclaim before pushing AIL during unmount</a></li>
-              <li><a href="https://lore.kernel.org/all/20260310183835.89827-8-ytohnuki@amazon.com/">2/4 - xfs: avoid dereferencing log items after push callbacks</a></li>
-              <li><a href="https://lore.kernel.org/all/20260310183835.89827-9-ytohnuki@amazon.com/">3/4 - xfs: save ailp before dropping the AIL lock in push callbacks</a></li>
-              <li><a href="https://lore.kernel.org/all/20260310183835.89827-10-ytohnuki@amazon.com/">4/4 - xfs: refactor xfsaild_push loop into helper</a></li>
-            </ul>
-          </li>
           <li><a href="https://lore.kernel.org/all/20260223123345.14838-2-ytohnuki@amazon.com/">ext4: replace BUG_ON with proper error handling in ext4_read_inline_folio</a></li>
           <li><a href="https://lore.kernel.org/all/20260226201857.27310-2-ytohnuki@amazon.com/">fs: remove stale and duplicate forward declarations</a></li>
-          <li><a href="https://lore.kernel.org/all/20260314184421.47303-2-ytohnuki@amazon.com/">fs: fix use-after-free in peer group traversal during mount release</a></li>
           <li><a href="https://lore.kernel.org/all/20260316070358.65225-2-ytohnuki@amazon.com/">blk-wbt: remove WARN_ON_ONCE from wbt_init_enable_default()</a></li>
         </ul>
       </div>
