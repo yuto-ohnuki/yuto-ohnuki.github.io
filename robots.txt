@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yuto-ohnuki.github.io/sitemap.xml
